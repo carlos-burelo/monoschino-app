@@ -1,0 +1,38 @@
+@import 'x';
+
+.navbar {
+  width: 100%;
+  color: $titles;
+  background-color: $background;
+  border: solid 1px $border;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: $z-navigation;
+  height: $navbar-height;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.link {
+  font-size: 25px;
+  display: grid;
+  place-content: center;
+  &::after {
+    margin: auto;
+    animation: expand 0.2s ease-in-out;
+    margin-top: 5px;
+    content: '';
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: $primary;
+    visibility: hidden;
+  }
+}
+.active {
+  color: $primary;
+  &::after {
+    visibility: visible;
+  }
+}

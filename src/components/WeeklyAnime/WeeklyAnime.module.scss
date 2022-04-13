@@ -1,0 +1,14 @@
+.slider {
+  margin: 0 auto;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 15px;
+  overflow-y: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scroll-snap-align: start;
+  margin: 30px 0;
+}
+.day {
+  text-transform: capitalize;
+}

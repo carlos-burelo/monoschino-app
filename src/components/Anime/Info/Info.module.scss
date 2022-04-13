@@ -1,0 +1,122 @@
+@import 'x';
+.container {
+  margin-bottom: $navbar-height + 10px;
+}
+.head,
+.image {
+  position: relative;
+}
+.head {
+  margin-bottom: 105px;
+}
+
+.mask {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  @include gradientBottom;
+}
+.cover {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 50%;
+}
+.coverImage {
+  border-radius: $min-radius;
+}
+.title,
+.titleAlt {
+  text-align: center;
+  max-width: 90%;
+  margin: auto;
+  @include text-overflow(2);
+}
+.data {
+  display: grid;
+  gap: 8px;
+  justify-items: center;
+}
+.titleAlt {
+  font-size: 16px;
+  color: $texts;
+}
+.info {
+  display: flex;
+  gap: 8px;
+}
+.rating,
+.status,
+.date {
+  display: flex;
+  align-items: center;
+  svg {
+    fill: $primary;
+  }
+}
+.status {
+  padding: 0 8px;
+  border-radius: $min-radius;
+}
+.estreno {
+  background-color: $primary;
+  color: $titles;
+}
+.buttons {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  button {
+    display: flex;
+    gap: 8px;
+    padding: 10px 15px;
+    font-size: 18px;
+    border-radius: $min-radius;
+    border: solid 2px $titles;
+    background-color: $titles;
+    color: $background;
+    font-weight: 600;
+    &:first-child {
+      border-color: $primary;
+      background-color: $background;
+      color: $primary;
+    }
+  }
+}
+.content {
+  margin-top: 30px;
+  padding: 0 10px;
+}
+.meta {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+.genres {
+  margin-bottom: 15px;
+  display: flex;
+  gap: 15px;
+  overflow-x: scroll;
+  .genre {
+    white-space: nowrap;
+    padding: 8px 10px;
+    border: solid 1px $primary;
+    border-radius: $min-radius;
+    color: $primary;
+  }
+}
+
+.rating,
+.status,
+.date {
+  display: flex;
+  gap: 5px;
+}
+.sinopsis {
+  font-size: 17px;
+  line-height: 1.5;
+}

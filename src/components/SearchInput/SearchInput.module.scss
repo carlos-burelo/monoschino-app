@@ -1,0 +1,31 @@
+@import 'x';
+
+$height: 45px;
+.search {
+  color: $titles;
+  width: 100%;
+  position: relative;
+  margin: 10px 0;
+}
+.input {
+  width: 100%;
+  height: $height;
+  border-radius: $min-radius;
+  border: 1px solid $border;
+  padding-left: $height;
+  padding-right: 10px;
+  font-size: 14px;
+  color: $titles;
+  background-color: $background-input;
+  &:focus {
+    outline: none;
+  }
+}
+.icon {
+  position: absolute;
+  left: 0;
+  height: $height;
+  width: $height;
+  display: grid;
+  place-content: center;
+}

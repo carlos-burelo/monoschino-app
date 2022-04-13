@@ -1,0 +1,17 @@
+@import 'x';
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: $header-height;
+  padding: 0 10px;
+}
+.back {
+  background-color: $background;
+  display: grid;
+  place-content: center;
+  color: $titles;
+  border: none;
+  font-size: 30px;
+}

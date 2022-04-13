@@ -1,0 +1,51 @@
+@import 'x';
+
+.container {
+  width: 100%;
+}
+
+.item {
+  padding: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: $min-radius;
+  cursor: pointer;
+  &:first-child {
+    color: $primary;
+    font-size: 23px;
+  }
+  &:hover {
+    background-color: $background-button;
+  }
+}
+.selected {
+  background-color: $primary;
+  width: 100%;
+  padding: 10px;
+  border-radius: $min-radius;
+  color: $background;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.dropdown {
+  padding: 10px 5px;
+  border-radius: $min-radius;
+  position: fixed;
+  z-index: $z-dropdown;
+  background-color: $background-card-hover;
+  bottom: $navbar-height + 5px;
+  left: 5px;
+  right: 5px;
+  max-height: 300px;
+  overflow-y: scroll;
+  animation: expand-dropdown 0.15s ease-in-out;
+}
+.text,
+.arrow {
+  color: $background;
+}
+.text {
+  @include text-overflow(1);
+}

@@ -1,0 +1,15 @@
+@import 'x';
+
+.header {
+  padding: 0 10px;
+  height: $header-height;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: solid 1px $border;
+}
+.title {
+  font-size: 25px;
+  font-family: 600;
+}

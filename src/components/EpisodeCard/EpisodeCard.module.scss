@@ -1,0 +1,44 @@
+@import 'x';
+
+.item {
+  display: grid;
+  grid-template-columns: 0.6fr 1fr;
+  position: relative;
+  transition: background-color 0.2s ease-in-out;
+  border-radius: $min-radius;
+  &:hover {
+    background-color: $background-card-hover;
+  }
+}
+.info {
+  padding: 10px;
+  display: grid;
+  gap: 2px;
+  align-content: center;
+}
+.title {
+  font-size: 18px;
+  font-weight: 500;
+  @include text-overflow;
+}
+.img {
+  border-radius: $min-radius;
+}
+.no {
+  border-radius: $min-radius 0 $min-radius;
+  background-color: $primary;
+  color: $titles;
+  padding: 6px 10px;
+  font-weight: 500;
+  width: fit-content;
+  position: absolute;
+  left: 0;
+}
+.type {
+  background-color: $primary;
+  width: fit-content;
+  color: $background;
+  border-radius: $min-radius;
+  padding: 0 10px;
+  right: 0;
+}

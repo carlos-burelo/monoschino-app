@@ -1,0 +1,55 @@
+@import 'x';
+
+.container {
+  padding: 0 10px;
+  margin-bottom: $navbar-height;
+}
+.item {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 0.5fr 1fr;
+}
+.img {
+  border-radius: $min-radius;
+}
+.list {
+  display: grid;
+  gap: 10px;
+}
+.data {
+  display: grid;
+  align-content: center;
+  gap: 8px;
+}
+.title {
+  @include text-overflow(2);
+}
+.no {
+  color: $titles;
+  width: fit-content;
+  padding: 0 10px;
+  background-color: $primary;
+  border-radius: $min-radius;
+}
+.section {
+  margin: 20px 0;
+}
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.close {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: $min-radius;
+  background-color: $background;
+  color: $titles;
+  display: grid;
+  place-content: center;
+  font-size: 1.2rem;
+  &:hover {
+    background-color: $background-button;
+  }
+}

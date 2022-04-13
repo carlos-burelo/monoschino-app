@@ -1,0 +1,73 @@
+@import 'x';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  user-select: none;
+  &::selection {
+    background-color: transparent;
+  }
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: $background;
+}
+a,
+li,
+div,
+h1,
+h2,
+h3 {
+  color: $titles;
+}
+li {
+  list-style: none;
+}
+p,
+span {
+  color: $texts;
+}
+svg {
+  height: 1.25em;
+  width: 1.25em;
+  display: grid;
+  place-content: center;
+  fill: currentColor;
+}
+a {
+  text-decoration: none;
+}
+// classes
+
+.list {
+  display: grid;
+  gap: 15px;
+}
+.grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+.primary {
+  color: $primary;
+}
+.section {
+  margin: 20px 0;
+  font-size: 22px;
+}
+.md {
+  margin: 20px 0;
+}
+iframe {
+  display: block;
+  border: none;
+  height: 100vh;
+  width: 100vw;
+}

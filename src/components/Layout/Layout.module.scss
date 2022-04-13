@@ -1,0 +1,8 @@
+@import 'x';
+
+.container {
+  padding: 0 10px;
+  max-width: 100%;
+  overflow: hidden;
+  padding-bottom: $navbar-height + 15px;
+}

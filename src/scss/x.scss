@@ -1,0 +1,86 @@
+$background: #000000;
+$titles: #fafafa;
+$border: #161616;
+$primary: #f43f5e;
+$texts: #b3b3b3;
+$background-input: #0c0c0c;
+$background-card-hover: #0a0a0a;
+$background-button: #111111;
+// other colors
+$yellow: #eab308;
+$orange: #f97316;
+// positions
+
+$z-navigation: 100;
+$z-dropdown: 200;
+$z-modal: 300;
+// metrics
+
+$min-radius: 8px;
+$max-radius: 100px;
+
+// sizes
+
+$header-height: 60px;
+$navbar-height: 65px;
+
+// animations
+
+@keyframes expand {
+  // expand bar from center to right and left
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 50%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes expand-dropdown {
+  // expand dropdown from bottom to top and max height of 300px
+  // ussing linear transition
+  0% {
+    max-height: 0px;
+  }
+  50% {
+    max-height: 150px;
+  }
+  100% {
+    max-height: 300px;
+  }
+}
+
+@keyframes modalAnimation {
+  // expand modal from center to all sides
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+// utils
+
+@mixin text-overflow($lines: 2) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $lines;
+  -webkit-box-orient: vertical;
+}
+
+@mixin gradientBottom {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(37, 5, 15, 0.8911939775910365) 18%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}

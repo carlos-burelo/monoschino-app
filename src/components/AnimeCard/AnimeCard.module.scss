@@ -1,0 +1,17 @@
+@import 'x';
+.item {
+  flex-shrink: 0;
+  scroll-snap-align: start;
+}
+.card {
+  display: grid;
+  gap: 10px;
+}
+
+.img {
+  border-radius: $min-radius;
+}
+.title {
+  font-size: 13px;
+  @include text-overflow(1);
+}
